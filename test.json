@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "firstName": "Orelia",
+    "lastName": "Cole",
+    "profession": "Refuse Collector",
+    "city": "Attleborough",
+    "age": 16,
+    "salary": 59764
+  },
+  {
+    "id": 2,
+    "firstName": "Konstanze",
+    "lastName": "Hughes",
+    "profession": "Ambulance Crew",
+    "city": "Trindon",
+    "age": 68,
+    "salary": 35736
+  }
+]

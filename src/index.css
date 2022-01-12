@@ -1,13 +1,162 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+}
+
+body {
+  height: 100vh;
+  background: lightgrey;
+  font-family: Roboto, 'Open Sans', sans-serif;
+  color: #272727;
+}
+
+
+/* STYLES FOR COMPONENT Home */
+.inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 940px) {
+  .inner-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+section {
+  width: 100%;
+  margin: 0.5rem auto 2rem auto;
+}
+
+/* Header */
+.header {
+  background-color: #272727;
+  width: 100%;
+  margin: 0rem auto 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.header button {
+  width: 7rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: rgb(250, 188, 74);
+  color: #2e2e2e;
+  letter-spacing: 1px;
+}
+
+.header button:hover {
+  background-color: rgb(250, 175, 50);
+}
+
+.header h1 {
+  color: #d3d3d3;
+}
+
+/* Selector Section */
+#selector-section {
+  background-color: #e1e1e1;
+  width: 85%;
+  padding: 1.5rem 2rem 1.5rem;
+  height: 250px;
+}
+
+#selector-section button {
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: rgb(95, 95, 218);
+  color: #e2e2e2;
+  letter-spacing: 1px;
+}
+
+#selector-section button:hover {
+  background-color: rgb(95, 70, 200);
+}
+
+.form-item {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin: 1rem;
+  height: 2rem;
+}
+
+.form-item label {
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.form-item .form-item-input {
+  padding: 3px .75rem;
+  font-size: 1rem;
+}
+
+/* Results Section */
+#results-section {
+  background-color: #e1e1e1;
+  width: 85%;
+  padding: .125rem 2rem .5rem;
+  min-height: 250px;
+}
+
+#json {
+  font-family: 'Roboto Mono', Roboto, 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-size: 700;
+}
+
+#results-section > span {
+  margin-left: 2rem;
+}
+
+.copy-instruction {
+  cursor: pointer;
+  background-color: #c3c3c3;
+  border: 3px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 10px;
+  width: 15rem;
+  /* margin: 1rem; */
+}
+
+.copy-instruction .all-copy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy-instruction > span {
+}
+
+.copy-instruction:hover {
+  background-color: rgb(204, 241, 204);
+}
+
+.copy-info {
+  /* visibility: hidden; */
+  margin: 0 0 0.5rem 4rem;
 }
